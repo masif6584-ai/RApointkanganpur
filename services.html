@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Services - RA Point Kanganpur</title>
+<title>Our Services - RA Point Kanganpur</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    /* Modern Colors & Fonts */
     body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; color: #333; }
     
-    header { background: #4B0082; color: #FFD700; text-align: center; padding: 40px 20px; }
-    header h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; }
-    
-    nav { background: #FFD700; text-align: center; padding: 15px; sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    nav a { color: #4B0082; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
-    nav a:hover { color: #000; text-decoration: underline; }
+    /* Top Header */
+    header { background: #4B0082; color: #FFD700; text-align: center; padding: 30px 10px; }
+    header h1 { margin: 0; font-size: 2.2rem; }
 
-    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-    
-    /* Responsive Grid Design */
+    /* Main Navigation Bar */
+    nav.main-nav { background: #333; text-align: center; padding: 12px; position: sticky; top: 0; z-index: 1000; }
+    nav.main-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+    /* Special Services Bar (Yellow Bar) */
+    .services-bar { background: #FFD700; color: #4B0082; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9rem; overflow-x: auto; white-space: nowrap; border-bottom: 2px solid #4B0082; }
+    .services-bar span { margin: 0 10px; border-right: 1px solid #4B0082; padding-right: 10px; }
+
+    .container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
+
+    /* Full Image Grid Layout */
     .services-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -26,104 +30,120 @@
 
     .service-card {
         background: white;
-        border-radius: 15px;
+        border-radius: 10px;
         overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        border: 1px solid #ddd;
+        text-align: center;
+        border: 2px solid #ddd;
     }
 
-    .service-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    }
-
+    /* Image Full Dikhne ke liye Styling */
     .service-card img {
         width: 100%;
-        height: 200px;
-        object-fit: cover; /* Images ko sahi fit karne ke liye */
-        border-bottom: 3px solid #FFD700;
+        height: auto; /* Full height allow karne ke liye */
+        display: block;
+        border-bottom: 2px solid #FFD700;
+        background: #fff;
     }
 
-    .card-content { padding: 20px; text-align: center; }
-    .card-content h3 { margin: 10px 0; color: #4B0082; font-size: 1.3rem; }
-    .card-content p { font-size: 0.95rem; color: #666; }
+    .card-title { padding: 15px; background: #f8f8f8; font-weight: bold; color: #4B0082; font-size: 1.1rem; }
 
-    footer { background: #222; color: #FFD700; text-align: center; padding: 20px; margin-top: 50px; }
-    .phone-link { color: #FFD700; text-decoration: none; font-weight: bold; }
+    footer { background: #222; color: #FFD700; text-align: center; padding: 20px; margin-top: 40px; }
 </style>
 </head>
-
 <body>
 
 <header>
     <h1>RA Point Kanganpur</h1>
-    <p>Premium Digital & Stationery Solutions</p>
+    <p>Premium Digital & Online Services</p>
 </header>
 
-<nav>
+<nav class="main-nav">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
 </nav>
 
+<div class="services-bar">
+    <span>#Online Forms</span>
+    <span>#Photocopy</span>
+    <span>#NADRA</span>
+    <span>#Printing</span>
+    <span>#Flex Design</span>
+    <span>#Stationery</span>
+    <span>#All Services</span>
+</div>
+
 <div class="container">
+    <h2 style="text-align:center; color:#4B0082;">Our Professional Gallery</h2>
+    
     <div class="services-grid">
 
         <div class="service-card">
-            <img src="IMG-20260225-WA0060.jpg" alt="Online Forms">
-            <div class="card-content">
-                <h3>Online Forms Filling</h3>
-                <p>Admission forms, Job applications, and all E-portal registrations.</p>
-            </div>
+            <img src="IMG-20260225-WA0060.jpg" alt="Service 1">
+            <div class="card-title">Online Forms & Registration</div>
         </div>
 
         <div class="service-card">
-            <img src="IMG-20260225-WA0061.jpg" alt="Photocopy Services">
-            <div class="card-content">
-                <h3>Photocopy & Printing</h3>
-                <p>High-quality black & white and color printing at best rates.</p>
-            </div>
+            <img src="IMG-20260225-WA0061.jpg" alt="Service 2">
+            <div class="card-title">Photocopy & Printing</div>
         </div>
 
         <div class="service-card">
-            <img src="IMG-20260225-WA0062.jpg" alt="NADRA Services">
-            <div class="card-content">
-                <h3>NADRA & Legal Docs</h3>
-                <p>Affidavits, Stamp Papers, and NADRA related online assistance.</p>
-            </div>
+            <img src="IMG-20260225-WA0062.jpg" alt="Service 3">
+            <div class="card-title">NADRA & Document Work</div>
         </div>
 
         <div class="service-card">
-            <img src="IMG-20260225-WA0055.jpg" alt="Passport Photos">
-            <div class="card-content">
-                <h3>Passport Photos</h3>
-                <p>Instant 5-minute passport size photo service with editing.</p>
-            </div>
+            <img src="IMG-20260225-WA0063.jpg" alt="Service 4">
+            <div class="card-title">High Quality Printing</div>
         </div>
 
         <div class="service-card">
-            <img src="IMG-20260225-WA0070.jpg" alt="Stationery Items">
-            <div class="card-content">
-                <h3>Stationery & Accessories</h3>
-                <p>Complete range of school stationery and mobile accessories.</p>
-            </div>
+            <img src="IMG-20260225-WA0066.jpg" alt="Service 5">
+            <div class="card-title">Passport Size Photos</div>
         </div>
 
         <div class="service-card">
-            <img src="IMG-20260225-WA0073.jpg" alt="Flex Design">
-            <div class="card-content">
-                <h3>Flex Designing</h3>
-                <p>Professional flex, banner, and visiting card designing.</p>
-            </div>
+            <img src="IMG-20260225-WA0068.jpg" alt="Service 6">
+            <div class="card-title">Lamination Services</div>
+        </div>
+
+        <div class="service-card">
+            <img src="IMG-20260225-WA0070.jpg" alt="Service 7">
+            <div class="card-title">Stationery & Accessories</div>
+        </div>
+
+        <div class="service-card">
+            <img src="IMG-20260225-WA0071.jpg" alt="Service 8">
+            <div class="card-title">Stamp Paper & Affidavits</div>
+        </div>
+
+        <div class="service-card">
+            <img src="IMG-20260225-WA0073.jpg" alt="Service 9">
+            <div class="card-title">Flex & Banner Designing</div>
+        </div>
+
+        <div class="service-card">
+            <img src="IMG-20260225-WA0055.jpg" alt="Service 10">
+            <div class="card-title">Professional CV Making</div>
+        </div>
+
+        <div class="service-card">
+            <img src="IMG-20260225-WA0082.jpg" alt="Service 11">
+            <div class="card-title">Mobile Services</div>
+        </div>
+
+        <div class="service-card">
+            <img src="IMG-20260225-WA0090.jpg" alt="Service 12">
+            <div class="card-title">E-Services Center</div>
         </div>
 
     </div>
 </div>
 
 <footer>
-    <p>© 2026 RA Point Kanganpur</p>
-    <p>Call Us: <a href="tel:03041412493" class="phone-link">0304-1412493</a></p>
+    <p>© 2026 RA Point Kanganpur | 📞 0304-1412493</p>
 </footer>
 
 </body>
