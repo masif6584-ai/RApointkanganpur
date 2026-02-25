@@ -4,25 +4,109 @@
 <meta charset="UTF-8">
 <title>RA Point Kanganpur</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; line-height: 1.8; }
-header { background: #ffcc00; padding: 20px; }
-nav { padding: 10px; background: #f4f4f4; border-bottom: 1px solid #ddd; }
-nav a { margin: 0 10px; text-decoration: none; color: #000; font-weight: bold; }
-section { padding: 20px; }
-.banner-img { 
-    width: 100%; 
-    max-width: 900px; 
-    height: auto; 
-    border-radius: 8px; 
+
+/* ===== BODY FULL THEME ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.8;
+    background: linear-gradient(rgba(75,0,130,0.85), rgba(75,0,130,0.85)),
+                url('IMG-20260209-WA0003(1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #4B0082;
+    padding: 25px;
+    color: #FFD700;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    padding: 15px;
+    background: #FFD700;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4B0082;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ===== SECTION BOX ===== */
+section {
+    padding: 30px 20px;
+    background: rgba(0,0,0,0.65);
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+}
+
+/* ===== IMAGE ===== */
+.banner-img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
     margin: 20px 0;
 }
-.services { text-align: right; max-width: 900px; margin: auto; }
-.services p { margin: 8px 0; }
-footer { background: #222; color: #fff; padding: 20px; margin-top: 20px; }
-a { color: blue; }
+
+/* ===== SERVICES ===== */
+.services {
+    text-align: right;
+    max-width: 900px;
+    margin: auto;
+}
+
+.services p {
+    margin: 8px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #4B0082;
+    color: #FFD700;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #FFD700;
+}
+
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
@@ -37,6 +121,7 @@ a { color: blue; }
 </nav>
 
 <section>
+
 <h2>Welcome to RA Point Kanganpur</h2>
 
 <img src="IMG-20260209-WA0003(1).jpg" class="banner-img">
@@ -80,8 +165,11 @@ WhatsApp Channel
 </section>
 
 <footer>
-<p>&copy; 2026 RA Point Kanganpur | All Rights Reserved</p>
+<p>&copy; 2026 RA Point Kanganpur | All Rights Reserved.</p>
 </footer>
+
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-btn" href="https://wa.me/923041412493" target="_blank">💬</a>
 
 </body>
 </html>
