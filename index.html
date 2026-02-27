@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-/* ===== BODY FULL THEME ===== */
+/* ===== GLOBAL THEME ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,39 +21,40 @@ body {
     color: white;
 }
 
-/* ===== HEADER STYLING FOR LOGO ===== */
+/* ===== HEADER WITH LOGO ===== */
 header {
     background: #4B0082;
-    padding: 30px 20px;
+    padding: 25px 15px;
     color: #FFD700;
     border-bottom: 4px solid #FFD700;
-    /* Flexbox for alignment */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px; /* Space between logo and text */
 }
 
-/* Round Logo Styling in Header */
 .header-logo {
-    width: 90px; /* Bada size, jo asani se nazar aaye */
-    height: 90px;
-    border-radius: 50%;
-    border: 3px solid #FFD700; /* Gold border jo design se match kare */
-    object-fit: contain;
-    background-color: white; /* Agar background transparent ho */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Round Shape */
+    border: 3px solid #FFD700;
+    object-fit: cover;
+    background: white; /* Backdrop for logo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.header-text h1 { margin: 0; font-size: 2.8rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-.header-text p { font-size: 1.3rem; font-weight: bold; margin: 5px 0 0 0; opacity: 0.9; }
+.header-text { text-align: left; }
+.header-text h1 { margin: 0; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.header-text p { margin: 5px 0 0 0; font-size: 1.2rem; font-weight: bold; }
 
-/* ===== NAVBAR WITH HOVER BOXES ===== */
+/* ===== NAVIGATION ===== */
 nav {
     padding: 15px 0;
     background: #333;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 nav a {
     margin: 0 10px;
@@ -70,76 +71,74 @@ nav a:hover {
     color: #4B0082;
 }
 
-/* ===== SECTION BOX ===== */
+/* ===== MAIN SECTION ===== */
 section {
-    padding: 40px 20px;
-    background: rgba(0,0,0,0.75); 
-    margin: 40px auto;
+    padding: 35px 20px;
+    background: rgba(0,0,0,0.75);
+    margin: 35px auto;
     max-width: 1000px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,215,0,0.3);
+    border-radius: 15px;
+    border: 1px solid rgba(255,215,0,0.2);
 }
 
 .banner-img {
     width: 100%;
     max-width: 900px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
 }
 
-/* ===== BOLD URDU TEXT STYLING ===== */
+/* ===== BOLD URDU TEXT ===== */
 .services { 
     text-align: right; 
     max-width: 850px; 
-    margin: 30px auto; 
-    direction: rtl; /* Urdu alignment */
+    margin: 0 auto; 
+    direction: rtl; 
 }
 
 .services p { 
-    margin: 15px 0; 
-    font-size: 1.4rem; 
+    margin: 18px 0; 
+    font-size: 1.5rem; 
     font-weight: 900;  
     color: #FFD700;    
     text-shadow: 2px 2px 3px rgba(0,0,0,0.8); 
     border-bottom: 1px solid rgba(255,215,0,0.1);
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
-h2 { 
-    font-size: 2rem; 
-    color: #fff; 
-    text-decoration: underline; 
-    text-underline-offset: 8px;
-    margin-bottom: 25px;
-}
+h2 { font-size: 2rem; margin-bottom: 25px; text-decoration: underline; text-underline-offset: 10px; }
 
-/* ===== WHATSAPP BUTTON ===== */
+/* ===== WHATSAPP FLOATING BUTTON ===== */
 .whatsapp-btn {
     position: fixed;
     bottom: 25px;
     right: 25px;
     background: #25D366;
     color: white;
-    font-size: 30px;
-    padding: 15px;
+    font-size: 35px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     z-index: 1000;
-    transition: 0.3s;
+    transition: 0.4s;
 }
-.whatsapp-btn:hover { transform: scale(1.1); }
+.whatsapp-btn:hover { transform: scale(1.1) rotate(10deg); }
 
-/* FOOTER BRANDING */
-footer { background: #222; color: #FFD700; text-align: center; padding: 30px 10px; border-top: 4px solid #4B0082; line-height: 1.6; }
+/* ===== FOOTER ===== */
+footer { background: #222; color: #FFD700; text-align: center; padding: 35px 15px; border-top: 4px solid #4B0082; }
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.png" alt="R.A Point Logo" class="header-logo">
+    <img src="1000083262.jpg" alt="R.A Point Logo" class="header-logo">
     <div class="header-text">
         <h1>R.A Point Kanganpur</h1>
         <p>تمام سہولیات ایک چھت تلے 🌻</p>
@@ -147,42 +146,43 @@ footer { background: #222; color: #FFD700; text-align: center; padding: 30px 10p
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
 <section>
-<h2>Welcome to R.A Point Kanganpur</h2>
+    <h2>Welcome to R.A Point Kanganpur</h2>
 
-<img src="IMG-20260209-WA0003(1).jpg" class="banner-img">
+    <img src="IMG-20260209-WA0003(1).jpg" class="banner-img" alt="Shop Banner">
 
-<div class="services">
-<p>👈 پاسپورٹ تصویریں 5 منٹ میں ارجنٹ حاصل کریں۔</p>
-<p>👈 بیان حلفی و اسٹام پیپر ہر قسم</p>
-<p>👈 نادرا کی تمام سہولیات</p>
-<p>👈 آن لائن تمام سہولیات</p>
-<p>👈 فلیکس ڈیزائننگ اور ہر قسم کی ڈیزاننگ اور پرنٹنگ کی سہولت</p>
-<p>👈 تمام قسم کا سٹیشنری کا سامان</p>
-<p>👈 تمام قسم کی موبائل اسیسریز</p>
-<p>👈 فوٹو کاپی و کلر پرنٹ کی سہولت</p>
-<p>👈 اراضی ریکارڈ / فرد کی سہولت</p>
-</div>
+    <div class="services">
+        <p>👈 پاسپورٹ تصویریں 5 منٹ میں ارجنٹ حاصل کریں۔</p>
+        <p>👈 بیان حلفی و اسٹام پیپر ہر قسم</p>
+        <p>👈 نادرا کی تمام سہولیات</p>
+        <p>👈 آن لائن تمام سہولیات</p>
+        <p>👈 فلیکس ڈیزائننگ اور ہر قسم کی ڈیزاننگ اور پرنٹنگ کی سہولت</p>
+        <p>👈 تمام قسم کا سٹیشنری کا سامان</p>
+        <p>👈 تمام قسم کی موبائل اسیسریز</p>
+        <p>👈 فوٹو کاپی و کلر پرنٹ کی سہولت</p>
+        <p>👈 اراضی ریکارڈ / فرد کی سہولت</p>
+    </div>
 </section>
 
-<footer style="background: #222; color: #FFD700; text-align: center; padding: 30px 10px; border-top: 4px solid #4B0082; line-height: 1.6;">
-    <p style="margin: 0; font-size: 1rem; font-weight: bold;">© 2026 R.A Point Kanganpur | All Rights Reserved</p>
-    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #444; font-size: 0.9rem; color: #ccc;">
+<footer>
+    <p style="margin: 0; font-size: 1.1rem; font-weight: bold;">© 2026 R.A Point Kanganpur | All Rights Reserved</p>
+    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #444; font-size: 0.95rem; color: #ccc;">
         <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.75rem;">Project Lead & Developer:</span><br>
         <strong style="color: #fff; font-size: 1.1rem; display: block; margin: 5px 0;">Muhammad Asif</strong>
         <span style="color: #bbb;">Managed by:</span> 
         <strong style="color: #FFD700;">SPO Smart Printing & Online</strong><br>
-        <a href="https://wa.me/923034480404" style="display: inline-block; margin-top: 10px; background: #25D366; color: #fff; padding: 5px 15px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: bold;">
+        <a href="https://wa.me/923034480404" style="display: inline-block; margin-top: 15px; background: #25D366; color: #fff; padding: 8px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">
             📞 Contact Developer: 0303-4480404
         </a>
     </div>
 </footer>
 
 <a class="whatsapp-btn" href="https://wa.me/923041412493" target="_blank">💬</a>
+
 </body>
 </html>
