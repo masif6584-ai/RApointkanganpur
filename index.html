@@ -21,14 +21,31 @@ body {
     color: white;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER STYLING FOR LOGO ===== */
 header {
     background: #4B0082;
-    padding: 30px;
+    padding: 30px 20px;
     color: #FFD700;
     border-bottom: 4px solid #FFD700;
+    /* Flexbox for alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
 }
-header h1 { margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+/* Round Logo Styling in Header */
+.header-logo {
+    width: 90px; /* Bada size, jo asani se nazar aaye */
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #FFD700; /* Gold border jo design se match kare */
+    object-fit: contain;
+    background-color: white; /* Agar background transparent ho */
+}
+
+.header-text h1 { margin: 0; font-size: 2.8rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.header-text p { font-size: 1.3rem; font-weight: bold; margin: 5px 0 0 0; opacity: 0.9; }
 
 /* ===== NAVBAR WITH HOVER BOXES ===== */
 nav {
@@ -55,9 +72,9 @@ nav a:hover {
 
 /* ===== SECTION BOX ===== */
 section {
-    padding: 30px 20px;
-    background: rgba(0,0,0,0.75); /* Thora dark kiya taake text aur nazar aaye */
-    margin: 30px auto;
+    padding: 40px 20px;
+    background: rgba(0,0,0,0.75); 
+    margin: 40px auto;
     max-width: 1000px;
     border-radius: 12px;
     border: 1px solid rgba(255,215,0,0.3);
@@ -81,10 +98,10 @@ section {
 
 .services p { 
     margin: 15px 0; 
-    font-size: 1.4rem; /* Size bada kiya */
-    font-weight: 900;  /* Full Bold */
-    color: #FFD700;    /* Gold Color for better visibility */
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.8); /* Shadow for readability */
+    font-size: 1.4rem; 
+    font-weight: 900;  
+    color: #FFD700;    
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.8); 
     border-bottom: 1px solid rgba(255,215,0,0.1);
     padding-bottom: 8px;
 }
@@ -122,8 +139,11 @@ footer { background: #222; color: #FFD700; text-align: center; padding: 30px 10p
 <body>
 
 <header>
-<h1>R.A Point Kanganpur</h1>
-<p style="font-size: 1.2rem; font-weight: bold;">تمام سہولیات ایک چھت تلے 🌻</p>
+    <img src="logo.png" alt="R.A Point Logo" class="header-logo">
+    <div class="header-text">
+        <h1>R.A Point Kanganpur</h1>
+        <p>تمام سہولیات ایک چھت تلے 🌻</p>
+    </div>
 </header>
 
 <nav>
