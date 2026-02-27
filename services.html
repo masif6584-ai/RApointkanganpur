@@ -4,47 +4,130 @@
 <meta charset="UTF-8">
 <title>Our Services - RA Point Kanganpur</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; color: #333; }
-    
-    header { background: #4B0082; color: #FFD700; text-align: center; padding: 30px 10px; }
-    header h1 { margin: 0; font-size: 2.2rem; }
 
-    nav.main-nav { background: #333; text-align: center; padding: 12px; position: sticky; top: 0; z-index: 1000; }
-    nav.main-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
 
-    .services-bar { background: #FFD700; color: #4B0082; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9rem; overflow-x: auto; white-space: nowrap; border-bottom: 2px solid #4B0082; }
-    .services-bar span { margin: 0 10px; border-right: 1px solid #4B0082; padding-right: 10px; }
+/* Header */
+header {
+    background: linear-gradient(135deg, #4B0082, #2e0057);
+    color: #FFD700;
+    text-align: center;
+    padding: 30px 10px;
+}
 
-    .container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
 
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-    }
+/* Navigation */
+nav.main-nav {
+    background: #333;
+    text-align: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-    .service-card {
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        text-align: center;
-        border: 2px solid #ddd;
-    }
+nav.main-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    .service-card img {
-        width: 100%;
-        height: auto; 
-        display: block;
-        border-bottom: 2px solid #FFD700;
-    }
+/* Services Bar */
+.services-bar {
+    background: #FFD700;
+    color: #4B0082;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 2px solid #4B0082;
+}
 
-    .card-title { padding: 15px; background: #f8f8f8; font-weight: bold; color: #4B0082; font-size: 1.1rem; }
+.services-bar span {
+    margin: 0 10px;
+    border-right: 1px solid #4B0082;
+    padding-right: 10px;
+}
 
-    /* Footer styling code is inline below */
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.service-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border: 2px solid #FFD700;
+}
+
+.service-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Box */
+.service-info {
+    padding: 15px;
+    background: #4B0082;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #FFD700;
+    text-align: center;
+    padding: 30px 10px;
+    border-top: 4px solid #4B0082;
+    line-height: 1.6;
+}
+
+footer a {
+    text-decoration: none;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
@@ -68,85 +151,85 @@
 </div>
 
 <div class="container">
-    <div class="services-grid">
+<div class="services-grid">
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0055.jpg" alt="Passport Photos">
-            <div class="card-title">Urgent Passport Size Photos</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0055.jpg" alt="">
+<div class="service-info">Urgent Passport Size Photos</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0060.jpg" alt="Online Forms">
-            <div class="card-title">All Online Forms & Registrations</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0060.jpg" alt="">
+<div class="service-info">All Online Forms & Registrations</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0061.jpg" alt="Photocopy">
-            <div class="card-title">High Speed Photocopy & Printing</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0061.jpg" alt="">
+<div class="service-info">High Speed Photocopy & Printing</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0062.jpg" alt="NADRA">
-            <div class="card-title">NADRA & E-Sahulat Services</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0062.jpg" alt="">
+<div class="service-info">NADRA & E-Sahulat Services</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0063.jpg" alt="Color Printing">
-            <div class="card-title">Premium Color Printing</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0063.jpg" alt="">
+<div class="service-info">Premium Color Printing</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0066.jpg" alt="Scanning">
-            <div class="card-title">Document Scanning & PDF Making</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0066.jpg" alt="">
+<div class="service-info">Document Scanning & PDF Making</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0068.jpg" alt="Lamination">
-            <div class="card-title">Card & Document Lamination</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0068.jpg" alt="">
+<div class="service-info">Card & Document Lamination</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0070.jpg" alt="Stationery">
-            <div class="card-title">Complete Stationery Items</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0070.jpg" alt="">
+<div class="service-info">Complete Stationery Items</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0071.jpg" alt="Stamp Paper">
-            <div class="card-title">E-Stamp Paper & Affidavits</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0071.jpg" alt="">
+<div class="service-info">E-Stamp Paper & Affidavits</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0073.jpg" alt="Flex Design">
-            <div class="card-title">Professional Flex Designing</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0073.jpg" alt="">
+<div class="service-info">Professional Flex Designing</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0082.jpg" alt="Accessories">
-            <div class="card-title">Mobile Accessories & Gadgets</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0082.jpg" alt="">
+<div class="service-info">Mobile Accessories & Gadgets</div>
+</a>
 
-        <div class="service-card">
-            <img src="IMG-20260225-WA0090.jpg" alt="Shop View">
-            <div class="card-title">Our Digital Service Center</div>
-        </div>
+<a href="https://wa.me/923034480404" target="_blank" class="service-card">
+<img src="IMG-20260225-WA0090.jpg" alt="">
+<div class="service-info">Our Digital Service Center</div>
+</a>
 
-    </div>
+</div>
 </div>
 
-<footer style="background: #222; color: #FFD700; text-align: center; padding: 30px 10px; border-top: 4px solid #4B0082; line-height: 1.6;">
-    <p style="margin: 0; font-size: 1rem; font-weight: bold;">© 2026 RA Point Kanganpur | All Rights Reserved</p>
-    
-    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #444; font-size: 0.9rem; color: #ccc;">
-        <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.75rem;">Project Lead & Developer:</span><br>
-        <strong style="color: #fff; font-size: 1.1rem; display: block; margin: 5px 0;">Muhammad Asif</strong>
-        
-        <span style="color: #bbb;">Managed by:</span> 
-        <strong style="color: #FFD700;">SPO Smart Printing & Online</strong><br>
-        
-        <a href="https://wa.me/923034480404" style="display: inline-block; margin-top: 10px; background: #25D366; color: #fff; padding: 5px 15px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: bold;">
-            📞 Contact Developer: 0303-4480404
-        </a>
-    </div>
+<footer>
+<p style="margin:0;font-weight:bold;">© 2026 RA Point Kanganpur | All Rights Reserved</p>
+
+<div style="margin-top:20px;padding-top:15px;border-top:1px solid #444;font-size:0.9rem;color:#ccc;">
+<span style="text-transform:uppercase;font-size:0.75rem;">Project Lead & Developer:</span><br>
+<strong style="color:#fff;font-size:1.1rem;">Muhammad Asif</strong><br>
+<span>Managed by:</span>
+<strong style="color:#FFD700;">SPO Smart Printing & Online</strong><br>
+
+<a href="https://wa.me/923034480404" style="display:inline-block;margin-top:10px;background:#25D366;color:#fff;padding:6px 18px;border-radius:20px;font-size:0.85rem;font-weight:bold;">
+📞 Contact Developer: 0303-4480404
+</a>
+</div>
+
 </footer>
 
 </body>
