@@ -21,37 +21,41 @@
 
     .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
 
-    /* Photo Gallery Grid */
+    /* Photo Gallery Grid - Full View Settings */
     .section-title { text-align: center; color: #4B0082; margin-bottom: 30px; font-size: 2rem; border-bottom: 2px solid #FFD700; display: inline-block; padding-bottom: 5px; }
     
     .photo-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
         margin-bottom: 50px;
     }
 
     .photo-card {
-        background: white;
+        background: #ffffff;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        border: 1px solid #ddd;
-        transition: transform 0.3s;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        border: 2px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px; /* Thora gap edges se */
     }
-    .photo-card:hover { transform: scale(1.03); }
 
     .photo-card img {
         width: 100%;
-        height: 250px;
-        object-fit: cover;
+        height: auto;
+        max-height: 500px; /* Boht zyada lambi pic ko control karne ke liye */
+        object-fit: contain; /* Is se picture puri nazar aayegi */
         display: block;
+        border-radius: 8px;
     }
 
     /* Additional Services Boxes */
     .additional-services {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 15px;
         margin-top: 20px;
     }
@@ -60,36 +64,41 @@
         background: #4B0082;
         color: #FFD700;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 12px;
         font-weight: bold;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         border: 2px solid #FFD700;
         transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .service-box:hover { background: #FFD700; color: #4B0082; transform: translateY(-5px); }
+    .service-box:hover { background: #FFD700; color: #4B0082; transform: translateY(-5px); border: 2px solid #4B0082; }
 
     /* WhatsApp Floating Button */
     .whatsapp-float {
         position: fixed;
         width: 60px;
         height: 60px;
-        bottom: 20px;
-        right: 20px;
+        bottom: 25px;
+        right: 25px;
         background-color: #25d366;
         color: #FFF;
         border-radius: 50px;
         text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        font-size: 35px;
+        box-shadow: 2px 5px 15px rgba(0,0,0,0.4);
         z-index: 1000;
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
+        transition: 0.3s;
     }
+    .whatsapp-float:hover { transform: scale(1.1); background-color: #128C7E; }
 
-    footer { background: #222; color: #FFD700; text-align: center; padding: 30px 10px; border-top: 4px solid #4B0082; line-height: 1.6; }
+    footer { background: #222; color: #FFD700; text-align: center; padding: 35px 10px; border-top: 4px solid #4B0082; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -116,20 +125,20 @@
 
 <div class="container">
     
-    <center><h2 class="section-title">Photo Gallery</h2></center>
+    <center><h2 class="section-title">Photo Gallery (Original View)</h2></center>
     <div class="photo-grid">
-        <div class="photo-card"><img src="IMG-20260225-WA0055.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0060.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0061.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0062.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0063.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0066.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0068.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0070.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0071.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0073.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0082.jpg" alt="Gallery"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0090.jpg" alt="Gallery"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0055.jpg" alt="Passport Photos"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0060.jpg" alt="Online Services"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0061.jpg" alt="Photocopy"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0062.jpg" alt="NADRA"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0063.jpg" alt="Color Printing"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0066.jpg" alt="Scanning"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0068.jpg" alt="Lamination"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0070.jpg" alt="Stationery"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0071.jpg" alt="Stamp Paper"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0073.jpg" alt="Flex Design"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0082.jpg" alt="Mobile Accessories"></div>
+        <div class="photo-card"><img src="IMG-20260225-WA0090.jpg" alt="Shop View"></div>
     </div>
 
     <center><h2 class="section-title">Additional Services</h2></center>
