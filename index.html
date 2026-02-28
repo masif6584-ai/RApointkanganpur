@@ -30,16 +30,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between logo and text */
+    flex-wrap: wrap; /* Mobile view fix */
+    gap: 20px;
 }
 
 .header-logo {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* Round Shape */
+    border-radius: 50%;
     border: 3px solid #FFD700;
-    object-fit: cover;
-    background: white; /* Backdrop for logo */
+    object-fit: cover; /* Logo ko khrab nahi hone deta */
+    background: white; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
@@ -54,10 +55,9 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 nav a {
-    margin: 0 10px;
+    margin: 5px 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -89,7 +89,7 @@ section {
     box-shadow: 0 6px 20px rgba(0,0,0,0.6);
 }
 
-/* ===== BOLD URDU TEXT ===== */
+/* ===== URDU TEXT ===== */
 .services { 
     text-align: right; 
     max-width: 850px; 
@@ -107,9 +107,10 @@ section {
     padding-bottom: 10px;
 }
 
-h2 { font-size: 2rem; margin-bottom: 25px; text-decoration: underline; text-underline-offset: 10px; }
+/* ===== FOOTER ===== */
+footer { background: #222; color: #FFD700; text-align: center; padding: 35px 15px; border-top: 4px solid #4B0082; }
 
-/* ===== WHATSAPP FLOATING BUTTON ===== */
+/* ===== WHATSAPP BUTTON ===== */
 .whatsapp-btn {
     position: fixed;
     bottom: 25px;
@@ -117,21 +118,16 @@ h2 { font-size: 2rem; margin-bottom: 25px; text-decoration: underline; text-unde
     background: #25D366;
     color: white;
     font-size: 35px;
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     z-index: 1000;
-    transition: 0.4s;
 }
-.whatsapp-btn:hover { transform: scale(1.1) rotate(10deg); }
-
-/* ===== FOOTER ===== */
-footer { background: #222; color: #FFD700; text-align: center; padding: 35px 15px; border-top: 4px solid #4B0082; }
 </style>
 </head>
 
@@ -152,7 +148,7 @@ footer { background: #222; color: #FFD700; text-align: center; padding: 35px 15p
 </nav>
 
 <section>
-    <h2>Welcome to R.A Point Kanganpur</h2>
+    <h2 style="font-size: 2rem; margin-bottom: 25px; text-decoration: underline;">Welcome to R.A Point Kanganpur</h2>
 
     <img src="IMG-20260209-WA0003(1).jpg" class="banner-img" alt="Shop Banner">
 
@@ -170,16 +166,8 @@ footer { background: #222; color: #FFD700; text-align: center; padding: 35px 15p
 </section>
 
 <footer>
-    <p style="margin: 0; font-size: 1.1rem; font-weight: bold;">© 2026 R.A Point Kanganpur | All Rights Reserved</p>
-    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #444; font-size: 0.95rem; color: #ccc;">
-        <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.75rem;">Project Lead & Developer:</span><br>
-        <strong style="color: #fff; font-size: 1.1rem; display: block; margin: 5px 0;">Muhammad Asif</strong>
-        <span style="color: #bbb;">Managed by:</span> 
-        <strong style="color: #FFD700;">SPO Smart Printing & Online</strong><br>
-        <a href="https://wa.me/923034480404" style="display: inline-block; margin-top: 15px; background: #25D366; color: #fff; padding: 8px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">
-            📞 Contact Developer: 0303-4480404
-        </a>
-    </div>
+    <p>© 2026 R.A Point Kanganpur | All Rights Reserved</p>
+    <p style="font-size: 0.9rem; color: #ccc;">Developer: Muhammad Asif (0303-4480404)</p>
 </footer>
 
 <a class="whatsapp-btn" href="https://wa.me/923041412493" target="_blank">💬</a>
