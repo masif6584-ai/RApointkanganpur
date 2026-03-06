@@ -13,7 +13,7 @@
     header h1 { margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
     header p { font-weight: bold; margin-top: 5px; opacity: 0.9; }
 
-    /* Navigation with Hover Boxes */
+    /* Navigation */
     nav.main-nav { background: #333; text-align: center; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
     nav.main-nav a { 
         color: white; 
@@ -28,7 +28,6 @@
     nav.main-nav a:hover { 
         background: #FFD700; 
         color: #4B0082; 
-        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
     }
 
     /* Sub-Services Bar */
@@ -45,6 +44,9 @@
         margin-bottom: 50px;
     }
 
+    /* Clickable Image Style */
+    .photo-link { text-decoration: none; position: relative; display: block; overflow: hidden; border-radius: 12px; }
+    
     .photo-card {
         background: #ffffff;
         border-radius: 12px;
@@ -52,12 +54,13 @@
         box-shadow: 0 6px 18px rgba(0,0,0,0.1);
         border: 2px solid #ddd;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 5px;
         transition: transform 0.3s;
     }
-    .photo-card:hover { transform: translateY(-5px); }
+    .photo-card:hover { transform: translateY(-5px); border-color: #25d366; }
 
     .photo-card img {
         width: 100%;
@@ -66,6 +69,18 @@
         object-fit: contain;
         display: block;
         border-radius: 8px;
+    }
+
+    /* Indicator for Image */
+    .inquiry-hint {
+        background: #25d366;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 0.85rem;
+        font-weight: bold;
+        border-radius: 0 0 8px 8px;
     }
 
     /* Section Headings */
@@ -79,6 +94,9 @@
         margin-top: 10px;
     }
 
+    /* Clickable Service Box */
+    .service-link { text-decoration: none; }
+
     .service-box {
         background: #4B0082;
         color: #FFD700;
@@ -90,10 +108,14 @@
         border: 2px solid #FFD700;
         transition: 0.3s;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
-    .service-box:hover { background: #FFD700; color: #4B0082; transform: translateY(-5px); border: 2px solid #4B0082; }
+    .service-box span.small-hint { font-size: 0.7rem; opacity: 0.8; margin-top: 5px; color: #fff; }
+    
+    .service-box:hover { background: #25d366; color: #fff; transform: translateY(-5px); border: 2px solid #fff; }
 
     /* WhatsApp Floating Button */
     .whatsapp-float {
@@ -115,10 +137,6 @@
         text-decoration: none;
         transition: 0.3s;
     }
-    .whatsapp-float:hover { transform: scale(1.1); background-color: #128C7E; }
-
-    /* Footer Branding */
-    footer { background: #222; color: #FFD700; text-align: center; padding: 35px 10px; border-top: 4px solid #4B0082; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -146,34 +164,119 @@
 <div class="container">
     
     <div class="photo-grid">
-        <div class="photo-card"><img src="IMG-20260225-WA0055.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0060.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0061.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0062.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0063.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0066.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0068.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0070.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0071.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0073.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0082.jpg" alt="R.A Point Service"></div>
-        <div class="photo-card"><img src="IMG-20260225-WA0090.jpg" alt="R.A Point Service"></div>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0055.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0060.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0061.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0062.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0063.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0066.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0068.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0070.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0071.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0073.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0082.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Hi, I want to inquire about this service." target="_blank" class="photo-link">
+            <div class="photo-card">
+                <img src="IMG-20260225-WA0090.jpg" alt="Service">
+                <div class="inquiry-hint">Click for WhatsApp Inquiry</div>
+            </div>
+        </a>
     </div>
 
     <center><h2 class="section-title">Additional Services</h2></center>
+    
     <div class="additional-services">
-        <div class="service-box">Urgent Passport Size Photos</div>
-        <div class="service-box">Online Forms & Registrations</div>
-        <div class="service-box">High Speed Photocopy</div>
-        <div class="service-box">NADRA & E-Sahulat Services</div>
-        <div class="service-box">Premium Color Printing</div>
-        <div class="service-box">Document Scanning & PDF</div>
-        <div class="service-box">Card & Document Lamination</div>
-        <div class="service-box">Complete Stationery Items</div>
-        <div class="service-box">E-Stamp Paper & Affidavits</div>
-        <div class="service-box">Professional Flex Designing</div>
-        <div class="service-box">Mobile Accessories & Gadgets</div>
-        <div class="service-box">Digital Service Center</div>
+        <a href="https://wa.me/923041412493?text=Inquiry: Urgent Passport Size Photos" target="_blank" class="service-link">
+            <div class="service-box">Urgent Passport Size Photos <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Online Forms & Registrations" target="_blank" class="service-link">
+            <div class="service-box">Online Forms & Registrations <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: High Speed Photocopy" target="_blank" class="service-link">
+            <div class="service-box">High Speed Photocopy <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: NADRA & E-Sahulat Services" target="_blank" class="service-link">
+            <div class="service-box">NADRA & E-Sahulat Services <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Premium Color Printing" target="_blank" class="service-link">
+            <div class="service-box">Premium Color Printing <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Document Scanning & PDF" target="_blank" class="service-link">
+            <div class="service-box">Document Scanning & PDF <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Card & Document Lamination" target="_blank" class="service-link">
+            <div class="service-box">Card & Document Lamination <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Complete Stationery Items" target="_blank" class="service-link">
+            <div class="service-box">Complete Stationery Items <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: E-Stamp Paper & Affidavits" target="_blank" class="service-link">
+            <div class="service-box">E-Stamp Paper & Affidavits <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Professional Flex Designing" target="_blank" class="service-link">
+            <div class="service-box">Professional Flex Designing <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Mobile Accessories & Gadgets" target="_blank" class="service-link">
+            <div class="service-box">Mobile Accessories & Gadgets <span class="small-hint">Click for Inquiry</span></div>
+        </a>
+        <a href="https://wa.me/923041412493?text=Inquiry: Digital Service Center" target="_blank" class="service-link">
+            <div class="service-box">Digital Service Center <span class="small-hint">Click for Inquiry</span></div>
+        </a>
     </div>
 </div>
 
@@ -181,21 +284,4 @@
     <span style="font-family: Arial;">💬</span>
 </a>
 
-<footer style="background: #222; color: #FFD700; text-align: center; padding: 30px 10px; border-top: 4px solid #4B0082; line-height: 1.6;">
-    <p style="margin: 0; font-size: 1rem; font-weight: bold;">© 2026 R.A Point Kanganpur | All Rights Reserved</p>
-    
-    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #444; font-size: 0.9rem; color: #ccc;">
-        <span style="letter-spacing: 1px; text-transform: uppercase; font-size: 0.75rem;">Project Lead & Developer:</span><br>
-        <strong style="color: #fff; font-size: 1.1rem; display: block; margin: 5px 0;">Muhammad Asif</strong>
-        
-        <span style="color: #bbb;">Managed by:</span> 
-        <strong style="color: #FFD700;">SPO Smart Printing & Online</strong><br>
-        
-        <a href="https://wa.me/923034480404" style="display: inline-block; margin-top: 10px; background: #25D366; color: #fff; padding: 5px 15px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: bold;">
-            📞 Contact Developer: 0303-4480404
-        </a>
-    </div>
-</footer>
-
-</body>
-</html>
+<footer style="background: #222; color: #FFD700; text
